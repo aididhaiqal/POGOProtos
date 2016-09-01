@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace POGOProtos.Networking.Envelopes {
+namespace POGOProtos.Networking.Platform.Responses {
 
   /// <summary>Holder for reflection information generated from POGOProtos/Networking/Platform/Responses/GetStoreItemsResponse.proto</summary>
   public static partial class GetStoreItemsResponseReflection {
@@ -23,29 +23,30 @@ namespace POGOProtos.Networking.Envelopes {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CkRQT0dPUHJvdG9zL05ldHdvcmtpbmcvUGxhdGZvcm0vUmVzcG9uc2VzL0dl",
-            "dFN0b3JlSXRlbXNSZXNwb25zZS5wcm90bxIfUE9HT1Byb3Rvcy5OZXR3b3Jr",
-            "aW5nLkVudmVsb3BlcxolUE9HT1Byb3Rvcy9EYXRhL1BsYXllci9DdXJyZW5j",
-            "eS5wcm90bxooUE9HT1Byb3Rvcy9JbnZlbnRvcnkvSXRlbS9JdGVtRGF0YS5w",
-            "cm90byKhBQoVR2V0U3RvcmVJdGVtc1Jlc3BvbnNlEk0KBnN0YXR1cxgBIAEo",
-            "DjI9LlBPR09Qcm90b3MuTmV0d29ya2luZy5FbnZlbG9wZXMuR2V0U3RvcmVJ",
-            "dGVtc1Jlc3BvbnNlLlN0YXR1cxJPCgVpdGVtcxgCIAMoCzJALlBPR09Qcm90",
-            "b3MuTmV0d29ya2luZy5FbnZlbG9wZXMuR2V0U3RvcmVJdGVtc1Jlc3BvbnNl",
-            "LlN0b3JlSXRlbRI7ChFwbGF5ZXJfY3VycmVuY2llcxgDIAMoCzIgLlBPR09Q",
-            "cm90b3MuRGF0YS5QbGF5ZXIuQ3VycmVuY3kSEAoIdW5rbm93bjQYBCABKAka",
-            "9QIKCVN0b3JlSXRlbRIPCgdpdGVtX2lkGAEgASgJEg4KBmlzX2lhcBgCIAEo",
-            "CBI5Cg9jdXJyZW5jeV90b19idXkYAyABKAsyIC5QT0dPUHJvdG9zLkRhdGEu",
-            "UGxheWVyLkN1cnJlbmN5EjkKD3lpZWxkc19jdXJyZW5jeRgEIAEoCzIgLlBP",
-            "R09Qcm90b3MuRGF0YS5QbGF5ZXIuQ3VycmVuY3kSOAoLeWllbGRzX2l0ZW0Y",
-            "BSABKAsyIy5QT0dPUHJvdG9zLkludmVudG9yeS5JdGVtLkl0ZW1EYXRhElgK",
-            "BHRhZ3MYBiADKAsySi5QT0dPUHJvdG9zLk5ldHdvcmtpbmcuRW52ZWxvcGVz",
-            "LkdldFN0b3JlSXRlbXNSZXNwb25zZS5TdG9yZUl0ZW0uVGFnc0VudHJ5EhAK",
-            "CHVua25vd243GAcgASgFGisKCVRhZ3NFbnRyeRILCgNrZXkYASABKAkSDQoF",
-            "dmFsdWUYAiABKAk6AjgBIiEKBlN0YXR1cxINCglVTkRFRklORUQQABIICgRP",
-            "S0FZEAFiBnByb3RvMw=="));
+            "dFN0b3JlSXRlbXNSZXNwb25zZS5wcm90bxIoUE9HT1Byb3Rvcy5OZXR3b3Jr",
+            "aW5nLlBsYXRmb3JtLlJlc3BvbnNlcxolUE9HT1Byb3Rvcy9EYXRhL1BsYXll",
+            "ci9DdXJyZW5jeS5wcm90bxooUE9HT1Byb3Rvcy9JbnZlbnRvcnkvSXRlbS9J",
+            "dGVtRGF0YS5wcm90byK8BQoVR2V0U3RvcmVJdGVtc1Jlc3BvbnNlElYKBnN0",
+            "YXR1cxgBIAEoDjJGLlBPR09Qcm90b3MuTmV0d29ya2luZy5QbGF0Zm9ybS5S",
+            "ZXNwb25zZXMuR2V0U3RvcmVJdGVtc1Jlc3BvbnNlLlN0YXR1cxJYCgVpdGVt",
+            "cxgCIAMoCzJJLlBPR09Qcm90b3MuTmV0d29ya2luZy5QbGF0Zm9ybS5SZXNw",
+            "b25zZXMuR2V0U3RvcmVJdGVtc1Jlc3BvbnNlLlN0b3JlSXRlbRI7ChFwbGF5",
+            "ZXJfY3VycmVuY2llcxgDIAMoCzIgLlBPR09Qcm90b3MuRGF0YS5QbGF5ZXIu",
+            "Q3VycmVuY3kSEAoIdW5rbm93bjQYBCABKAka/gIKCVN0b3JlSXRlbRIPCgdp",
+            "dGVtX2lkGAEgASgJEg4KBmlzX2lhcBgCIAEoCBI5Cg9jdXJyZW5jeV90b19i",
+            "dXkYAyABKAsyIC5QT0dPUHJvdG9zLkRhdGEuUGxheWVyLkN1cnJlbmN5EjkK",
+            "D3lpZWxkc19jdXJyZW5jeRgEIAEoCzIgLlBPR09Qcm90b3MuRGF0YS5QbGF5",
+            "ZXIuQ3VycmVuY3kSOAoLeWllbGRzX2l0ZW0YBSABKAsyIy5QT0dPUHJvdG9z",
+            "LkludmVudG9yeS5JdGVtLkl0ZW1EYXRhEmEKBHRhZ3MYBiADKAsyUy5QT0dP",
+            "UHJvdG9zLk5ldHdvcmtpbmcuUGxhdGZvcm0uUmVzcG9uc2VzLkdldFN0b3Jl",
+            "SXRlbXNSZXNwb25zZS5TdG9yZUl0ZW0uVGFnc0VudHJ5EhAKCHVua25vd243",
+            "GAcgASgFGisKCVRhZ3NFbnRyeRILCgNrZXkYASABKAkSDQoFdmFsdWUYAiAB",
+            "KAk6AjgBIiEKBlN0YXR1cxINCglVTkRFRklORUQQABIICgRPS0FZEAFiBnBy",
+            "b3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::POGOProtos.Data.Player.CurrencyReflection.Descriptor, global::POGOProtos.Inventory.Item.ItemDataReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Envelopes.GetStoreItemsResponse), global::POGOProtos.Networking.Envelopes.GetStoreItemsResponse.Parser, new[]{ "Status", "Items", "PlayerCurrencies", "Unknown4" }, null, new[]{ typeof(global::POGOProtos.Networking.Envelopes.GetStoreItemsResponse.Types.Status) }, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Envelopes.GetStoreItemsResponse.Types.StoreItem), global::POGOProtos.Networking.Envelopes.GetStoreItemsResponse.Types.StoreItem.Parser, new[]{ "ItemId", "IsIap", "CurrencyToBuy", "YieldsCurrency", "YieldsItem", "Tags", "Unknown7" }, null, null, new pbr::GeneratedClrTypeInfo[] { null, })})
+            new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Platform.Responses.GetStoreItemsResponse), global::POGOProtos.Networking.Platform.Responses.GetStoreItemsResponse.Parser, new[]{ "Status", "Items", "PlayerCurrencies", "Unknown4" }, null, new[]{ typeof(global::POGOProtos.Networking.Platform.Responses.GetStoreItemsResponse.Types.Status) }, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::POGOProtos.Networking.Platform.Responses.GetStoreItemsResponse.Types.StoreItem), global::POGOProtos.Networking.Platform.Responses.GetStoreItemsResponse.Types.StoreItem.Parser, new[]{ "ItemId", "IsIap", "CurrencyToBuy", "YieldsCurrency", "YieldsItem", "Tags", "Unknown7" }, null, null, new pbr::GeneratedClrTypeInfo[] { null, })})
           }));
     }
     #endregion
@@ -59,7 +60,7 @@ namespace POGOProtos.Networking.Envelopes {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::POGOProtos.Networking.Envelopes.GetStoreItemsResponseReflection.Descriptor.MessageTypes[0]; }
+      get { return global::POGOProtos.Networking.Platform.Responses.GetStoreItemsResponseReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -89,12 +90,12 @@ namespace POGOProtos.Networking.Envelopes {
 
     /// <summary>Field number for the "status" field.</summary>
     public const int StatusFieldNumber = 1;
-    private global::POGOProtos.Networking.Envelopes.GetStoreItemsResponse.Types.Status status_ = 0;
+    private global::POGOProtos.Networking.Platform.Responses.GetStoreItemsResponse.Types.Status status_ = 0;
     /// <summary>
     /// unconfirmed
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::POGOProtos.Networking.Envelopes.GetStoreItemsResponse.Types.Status Status {
+    public global::POGOProtos.Networking.Platform.Responses.GetStoreItemsResponse.Types.Status Status {
       get { return status_; }
       set {
         status_ = value;
@@ -103,14 +104,14 @@ namespace POGOProtos.Networking.Envelopes {
 
     /// <summary>Field number for the "items" field.</summary>
     public const int ItemsFieldNumber = 2;
-    private static readonly pb::FieldCodec<global::POGOProtos.Networking.Envelopes.GetStoreItemsResponse.Types.StoreItem> _repeated_items_codec
-        = pb::FieldCodec.ForMessage(18, global::POGOProtos.Networking.Envelopes.GetStoreItemsResponse.Types.StoreItem.Parser);
-    private readonly pbc::RepeatedField<global::POGOProtos.Networking.Envelopes.GetStoreItemsResponse.Types.StoreItem> items_ = new pbc::RepeatedField<global::POGOProtos.Networking.Envelopes.GetStoreItemsResponse.Types.StoreItem>();
+    private static readonly pb::FieldCodec<global::POGOProtos.Networking.Platform.Responses.GetStoreItemsResponse.Types.StoreItem> _repeated_items_codec
+        = pb::FieldCodec.ForMessage(18, global::POGOProtos.Networking.Platform.Responses.GetStoreItemsResponse.Types.StoreItem.Parser);
+    private readonly pbc::RepeatedField<global::POGOProtos.Networking.Platform.Responses.GetStoreItemsResponse.Types.StoreItem> items_ = new pbc::RepeatedField<global::POGOProtos.Networking.Platform.Responses.GetStoreItemsResponse.Types.StoreItem>();
     /// <summary>
     ///  Items to show in the shop
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::POGOProtos.Networking.Envelopes.GetStoreItemsResponse.Types.StoreItem> Items {
+    public pbc::RepeatedField<global::POGOProtos.Networking.Platform.Responses.GetStoreItemsResponse.Types.StoreItem> Items {
       get { return items_; }
     }
 
@@ -228,7 +229,7 @@ namespace POGOProtos.Networking.Envelopes {
             input.SkipLastField();
             break;
           case 8: {
-            status_ = (global::POGOProtos.Networking.Envelopes.GetStoreItemsResponse.Types.Status) input.ReadEnum();
+            status_ = (global::POGOProtos.Networking.Platform.Responses.GetStoreItemsResponse.Types.Status) input.ReadEnum();
             break;
           }
           case 18: {
@@ -263,7 +264,7 @@ namespace POGOProtos.Networking.Envelopes {
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public static pbr::MessageDescriptor Descriptor {
-          get { return global::POGOProtos.Networking.Envelopes.GetStoreItemsResponse.Descriptor.NestedTypes[0]; }
+          get { return global::POGOProtos.Networking.Platform.Responses.GetStoreItemsResponse.Descriptor.NestedTypes[0]; }
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
